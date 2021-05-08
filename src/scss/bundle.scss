@@ -1,0 +1,23 @@
+@import 'components/theme';
+@import 'components/footer';
+@import 'components/typography';
+@import 'components/utils';
+@import 'components/header';
+@import 'components/mobile-toggle';
+@import 'components/contact-form';
+@import 'components/interactive-belt';
+@import './components/cookie-consent';
+
+html, body {
+    overflow-x: hidden;
+}
+.turtle-background-image > .fl-row-content-wrap {
+    background-size: 80%;
+}
+
+body.privacy-policy {
+    header.fl-page-header {
+        background: var(--brand-purple);
+        position: relative;
+    }
+}

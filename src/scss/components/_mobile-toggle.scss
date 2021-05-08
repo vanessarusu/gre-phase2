@@ -1,0 +1,22 @@
+.fl-nav-mobile-offcanvas.fl-responsive-nav-enabled .fl-offcanvas-close {
+    opacity: 0;
+}
+
+.fl-nav-offcanvas-active {
+   .fl-page-nav-toggle-icon.fl-page-nav-toggle-visible-medium-mobile .fl-page-nav .navbar-toggle { 
+       @media (max-width: $below-small-desktop) {
+           @include transition();
+           position: fixed;
+           right: 270px;
+           top: 30px;
+           z-index: 1000;
+
+       }
+        i {
+            color: black;
+            &:before {
+                content: "\f00d" !important;
+            }
+        }
+    }
+}

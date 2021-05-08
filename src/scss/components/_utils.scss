@@ -1,0 +1,23 @@
+.inline-red-bg {
+    strong {
+        position: relative;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -0.6rem;
+            bottom: 0.3rem;
+            left: -0.6rem;
+            right: -0.6rem;
+            background: var(--brand-red);
+            z-index: -1;
+            @media (max-width: $below-small-desktop) {
+                bottom: -0.15rem;
+            }
+        }
+    }
+}
+
+@mixin transition($time: 0.15s) {
+    transition: all $time ease-in-out;
+}

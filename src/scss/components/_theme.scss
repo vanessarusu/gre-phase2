@@ -1,0 +1,44 @@
+:root {
+    --brand-grey: #414042;
+    --brand-purple: #662D8F;
+    --brand-red: #EB1C24;
+    --brand-dark-purple: #240038;
+    --brand-tan: #EFEFE8;
+    --brand-offwhite: #EDEAE9;
+    --sans-serif: EurostileLTStd;
+    --sans-serif-demi: EurostileLTStd-Demi;
+    --sans-serif-bold: EurostileLTStd-Demi;
+}
+
+$brand-grey: #414042;
+$brand-purple: #662D8F;
+$brand-red: #EB1C24;
+$brand-dark-purple: #240038;
+$brand-tan: #EFEFE8;
+$brand-offwhite: #EDEAE9;
+$sans-serif: 'EurostileLTStd';
+$sans-serif-demi: 'EurostileLTStd-Demi';
+$sans-serif-bold: 'EurostileLTStd-Demi';
+
+$tablet: 768px;
+$below-small-desktop: 1023px;
+
+@mixin sans-serif() {
+    font-family: $sans-serif;
+    font-family: var(--sans-serif);
+}
+
+@mixin sans-serif-demi() {
+    font-family: $sans-serif-demi;
+    font-family: var(--sans-serif-demi);
+}
+
+@mixin sans-serif-bold() {
+    font-family: $sans-serif-bold;
+    font-family: var(--sans-serif-bold);
+}
+
+::selection {
+    background: var(--brand-purple);
+    color: white;
+}

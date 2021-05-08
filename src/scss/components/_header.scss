@@ -1,0 +1,101 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    
+    &.fl-page-nav-toggle-icon.fl-page-nav-toggle-visible-medium-mobile {
+        @media(max-width:$below-small-desktop) {
+            position: absolute;
+        }
+    }
+
+    .fl-page-header-logo {
+        max-width: 250px;
+
+        @media (max-width: $tablet) {
+            max-width: 140px;
+        }
+        @media screen and (width: $tablet) { 
+            max-width: 300px;
+        }
+
+        img {
+            margin-top: -35px;
+        }
+    }
+}
+
+nav {
+    button .fas.fa-times {
+        color: black !important;
+    }
+
+   
+    &.fl-page-nav {
+        li.menu-item {
+            a {
+                @include transition();
+                @include sans-serif-bold();
+                font-weight: 100;
+                letter-spacing: 2px;
+                margin: 0.2rem;
+                padding: 0.8rem 0.1rem 0.4rem !important;
+                margin: 0 1.2rem;
+            }
+
+            &.current-menu-item {
+                a {
+                    @media (min-width: $below-small-desktop) {
+                        color: white !important;
+                    }
+                    border-bottom: 4px solid var(--brand-red);
+                    @include sans-serif-bold();
+                }
+            }
+        }
+        
+    }
+}
+
+.fl-page-nav-right .fl-page-header-wrap {
+    border-bottom: none;
+}
+
+@media (max-width: $below-small-desktop) {
+    .fl-page-nav-collapse.navbar-collapse {
+        li a {
+            color: black !important;
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+    .fl-page-nav-wrap {
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@media (max-width: $tablet) {
+    .fl-page-nav-toggle-icon.fl-page-nav-toggle-visible-mobile {
+        position: absolute;
+    }
+}
+
+// show normal header on non-home pages (privacy policy etc)
+
+// body:not(.home) header.fl-page-header {
+//     background-color: $brand-purple;
+//     position: relative;
+//     margin-bottom: 5rem;
+
+//     img {
+//         max-width: 180px;
+//     }
+// }
+
+// body:not(.home) header.fl-post-header {
+//     position: relative;
+// }

@@ -1,0 +1,40 @@
+html, body, h1, h2, h3, h4, h5, h6, div, section, article, p, a, blockquote {
+    @include sans-serif()
+}
+p, span {
+    letter-spacing: 1px;
+    @media (max-width: $tablet) {
+        letter-spacing: 0.2px;
+    }
+}
+p strong {
+    @include sans-serif-bold();
+}
+
+h1,h2,h3,h4,h5,h6 {
+    letter-spacing: 2px;
+}
+
+h1, h2 {
+    @include sans-serif-bold();
+    
+}
+h2 {
+    @media (max-width: $tablet) {
+        font-size: 1.6rem;
+    }
+}
+
+h3 {
+    @include sans-serif-demi();
+
+    @media (max-width: $tablet) {
+        font-size: 1.2rem;
+    }
+}
+
+code {
+    color: $brand-grey;
+    @include sans-serif();
+    letter-spacing: 1.5px;
+}

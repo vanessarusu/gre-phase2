@@ -1,0 +1,25 @@
+#cookie-law-info-bar .cli-bar-container {
+    padding: 1rem;
+
+    @media (max-width: $tablet) {
+        padding: 0.2rem;
+    }
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .cli-bar-message {
+        max-width: 800px;
+
+        @media (max-width: $tablet) {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 0.8rem;
+        }
+    }
+    
+    .cli-bar-btn_container {
+        @media (max-width: $tablet) {
+            margin: 0 auto;
+        }
+    }
+}
