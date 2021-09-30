@@ -15,7 +15,9 @@ import interactiveBelt from './interactive-belt';
         // if the age gate screen shows, render and insert the video
         // wait 1000 ms for plugin to init
         if(Boolean(document.querySelector(".age-gate-wrapper"))) {
-            var html = '<div class="video-contain"><video id="ageGateVideo" muted="" playsinline="" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background: transparent; transition: all 1s ease; left: 0px; top: 0px; opacity: 0;"><source src=\"https://lwdgdev.ca/gre/wp-content/uploads/20210310_KENNY-HEAD_NOGlow_720p.mov\" type="video/mp4"></video></div>';
+            // orange video
+            var html = '<div class="video-contain"><video id="ageGateVideo" muted="" playsinline="" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background: transparent; transition: all 1s ease; left: 0px; top: 0px; opacity: 0;"><source src=\"https://grandriverenterprises.com/oaptughy/20210929_KENNY-HEAD_ORANGE_HD_v2.mp4\" type="video/mp4"></video></div>';
+            // var html = '<div class="video-contain"><video id="ageGateVideo" muted="" playsinline="" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background: transparent; transition: all 1s ease; left: 0px; top: 0px; opacity: 0;"><source src=\"https://lwdgdev.ca/gre/wp-content/uploads/20210310_KENNY-HEAD_NOGlow_720p.mov\" type="video/mp4"></video></div>';
             var hook = document.querySelector(".age-gate-wrapper");
             hook.insertAdjacentHTML("afterbegin", html);
 
